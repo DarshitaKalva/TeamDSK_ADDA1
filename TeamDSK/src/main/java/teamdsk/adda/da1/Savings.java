@@ -9,5 +9,5 @@ package teamdsk.adda.da1;
  * @author darsh
  */
 public class Savings {
-    
+    System.out.println("savings account");
 }
