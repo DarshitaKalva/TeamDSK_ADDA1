@@ -8,6 +8,12 @@ package teamdsk.adda.da1;
  *
  * @author MADDU SAHITHI
  */
-public class Deposit {
-    
+import java.util.Date;
+public class Deposit extends Transaction {
+    private String accountNumber;
+
+    public Deposit(Date date, int amount, String accountNumber) {
+        super(date, "Deposit", amount);
+        this.accountNumber = accountNumber;
+    }
 }
