@@ -8,6 +8,16 @@ package teamdsk.adda.da1;
  *
  * @author MADDU SAHITHI
  */
-public class Withdrawal {
-    
+import java.util.Date;
+public class Withdrawal extends Transaction {
+    private String accountNumber;
+
+    public Withdrawal(Date date, int amount, String accountNumber) {
+        super(date, "Withdrawal", amount);
+        this.accountNumber = accountNumber;
+    }
+
+    public int getBalance(Account account) {
+        return account.getBalance();
+    }
 }
