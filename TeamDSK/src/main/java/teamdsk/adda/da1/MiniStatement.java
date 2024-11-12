@@ -9,5 +9,13 @@ package teamdsk.adda.da1;
  * @author MADDU SAHITHI
  */
 public class MiniStatement {
-    
+    private String accountNumber;
+
+    public MiniStatement(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public void getBalance(Account account) {
+        System.out.println(account.miniStatement());
+    }
 }
