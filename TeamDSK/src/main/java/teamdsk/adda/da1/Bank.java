@@ -8,6 +8,22 @@ package teamdsk.adda.da1;
  *
  * @author darsh
  */
+import java.util.ArrayList;
+
 public class Bank {
-    
+    private String name;
+    private ArrayList<Account> accounts = new ArrayList<>();
+
+    public Bank(String name) {
+        this.name = name;
+    }
+
+    public boolean authorizeAccount(Account account) {
+        // Dummy authorization logic
+        return accounts.contains(account);
+    }
+
+    public void manageTransaction(Transaction transaction) {
+        System.out.println("Managing transaction: " + transaction);
+    }
 }
